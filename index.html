@@ -51,7 +51,45 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="text-center">Hola</div>
+                    <div class="text-center">
+                        <form>
+                            <label for="in-total-amount" class="form-label">Total loan amount:</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" id="in-total-amount" aria-label="Amount (to the nearest dollar)">
+                            </div>
+
+                            <label for="in-down-payment-usd" class="form-label">Down payment:</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" id="in-down-payment-usd" aria-label="Down payment (to the nearest dollar)">
+                                <span class="input-group-text">- or -</span>
+                                <input type="text" class="form-control" id="in-down-payment-perc" aria-label="Down payment (as a percentage of total amount)">
+                                <span class="input-group-text">%</span>
+                            </div>
+
+                            <label for="in-req-amount" class="form-label">Requested amount:</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" id="in-req-amount" aria-label="Requested amount (to the nearest dollar)">
+                            </div>
+
+                            <label for="in-interest-rate" class="form-label">Annual interest rate:</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="in-interest-rate" aria-label="Annual interest rate in percentage">
+                                <span class="input-group-text">%</span>
+                            </div>
+
+                            <label for="in-period-years" class="form-label">Loan period in years:</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="in-period-years" aria-label="Loan period in years">
+                                <span class="input-group-text">years</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
